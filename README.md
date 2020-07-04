@@ -1,6 +1,6 @@
 ## Registration and Login Form validation
 
-Website that is allows user to create an account to reigster and login, while applying complete form validations.
+Website that allows user to create an account to reigster and login, while applying complete form validations.
 
 ## Developed using these technologies:
 * HTML
