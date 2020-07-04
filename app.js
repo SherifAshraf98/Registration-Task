@@ -3,6 +3,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
+const ejs = require('ejs');
 const saltRounds = 10;
 var showSuccessRegistrationAlert = false;
 const app = express();
@@ -12,11 +13,6 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 
-// Connect with the Database locally
-// mongoose.connect("mongodb://localhost:27017/userDB", {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true
-// });
 // Connect with the Database using MongoDB atlas
 mongoose.connect("mongodb+srv://admin-sherif:test-admin-user@regsiter-cluster.ybafy.mongodb.net/userDB", {
   useNewUrlParser: true,
